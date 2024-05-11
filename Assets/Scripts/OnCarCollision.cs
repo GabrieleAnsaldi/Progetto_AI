@@ -1,22 +1,50 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using VehicleBehaviour;
-
 public class OnCarCollision : MonoBehaviour
 {
+    [SerializeField] GameObject checkpointsParent;
+    Car car;
+    private void Start()
+    {
+        car = gameObject.GetComponent<Car>();
+    }
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("OnCollisionEnter");
+        //Debug.Log("OnCollisionEnter");
         gameObject.GetComponent<WheelVehicle>().IsPlayer = true;
-        // make it so that if the other object has the tag "railing" then the car will be destroyed
         if (collision.gameObject.tag == "railing")
         {
             Debug.Log("Auto colpisce barriera");
-            //freeze the car
-            gameObject.GetComponent<Rigidbody>().isKinematic = true;
-            gameObject.GetComponent<WheelVehicle>().IsPlayer = false;
-            gameObject.GetComponent<Car>().Fail();
-        }    
+            StopCar();
+            car.Fail();
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("OnTriggerEnter");
+        if (other.gameObject.tag == "checkpoint")
+        {
+            
+            int checkpoint = int.Parse(other.gameObject.name.ToString());
+            Debug.Log("Auto colpisce checkpoint " + checkpoint);
+            if (checkpoint - car.Score == 1)
+                car.Score = checkpoint;
+            else if (checkpoint == 0 && car.Score == checkpointsParent.transform.childCount) //finito il giro
+            {
+                car.LapFinished = true;
+
+                StopCar();
+            }
+            else StopCar(); //saltato un checkpoint
+        }
+    }
+
+    void StopCar()
+    {
+        gameObject.GetComponent<Rigidbody>().isKinematic = true;
+        gameObject.GetComponent<WheelVehicle>().IsPlayer = false;
     }
 }

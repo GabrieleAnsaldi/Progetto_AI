@@ -9,8 +9,13 @@ public class NeuralNetwork
     {
         this.network = network;
         Awake();
+    } //costruttore per la prima generazione
+    public NeuralNetwork(int[] network, Layer[] layers, float mutationAmount, float mutationChance) //costruttore per generazioni figlie
+    {
+        this.network = network;
+        System.Array.Copy(layers, this.layers, layers.Length);
+        Mutate(mutationAmount, mutationChance);
     }
-
     public class Layer{
         public float[,] weights; // weights[i,j] = nodo i, peso j
         public float[] biases; 
@@ -85,7 +90,7 @@ public class NeuralNetwork
     public void Mutate(float mutationAmount, float MutationChance){
         foreach (Layer l in layers) l.Mutate(mutationAmount, MutationChance);
     }
-    public float[] Brain(float[] inputs)
+    public float[] Brain(float[] inputs) //la rete neurale in funzione
     {
         layers[0].Forward(inputs);
         layers[0].Activation();
@@ -98,10 +103,10 @@ public class NeuralNetwork
 
         return layers[layers.Length - 1].nodes;
     }
-    public Layer[] CopyLayers()
+    public Layer[] CopyLayers() //copio i layers per creare poi le nuove generazioni
     {
         Layer[] newLayers = new Layer[layers.Length];
-        // copio i layer
+        // copio i layers
         for (int i = 0; i < layers.Length; i++)
         {
             newLayers[i] = new Layer(network[i], network[i + 1]);
