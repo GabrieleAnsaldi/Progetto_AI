@@ -1,0 +1,822 @@
+Using pre-set license
+Built from '2023.2/staging' branch; Version is '2023.2.3f1 (21747dafc6ee) revision 2192509'; Using compiler version '193431935'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'it' Physical Memory: 32653 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2023.2.3f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Fantin Jacopo/Documents/GitHub/Progetto_AI
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+55969
+-job-worker-count
+5
+-background-job-worker-count
+8
+-asset-garbage-collectors
+1
+Successfully changed project path to: C:/Users/Fantin Jacopo/Documents/GitHub/Progetto_AI
+C:/Users/Fantin Jacopo/Documents/GitHub/Progetto_AI
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [20268] Host "[IP] 192.168.1.10 [Port] 0 [Flags] 2 [Guid] 524388621 [EditorId] 524388621 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-4U1JB59) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [20268] Host "[IP] 192.168.1.10 [Port] 0 [Flags] 2 [Guid] 524388621 [EditorId] 524388621 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-4U1JB59) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
+[Physics::Module] Initialized MultithreadedJobDispatcher with 5 workers.
+Library Redirect Path: Library/
+Refreshing native plugins compatible for Editor in 1.08 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2023.2.3f1 (21747dafc6ee)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Fantin Jacopo/Documents/GitHub/Progetto_AI/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2487)
+    Vendor:   NVIDIA
+    VRAM:     12110 MB
+    Driver:   31.0.15.5244
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.3f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56148
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002711 seconds.
+- Loaded All Assemblies, in  0.442 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Finished resetting the current domain, in  0.351 seconds
+Domain Reload Profiling: 790ms
+	BeginReloadAssembly (167ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (50ms)
+	LoadAllAssembliesAndSetupDomain (172ms)
+		LoadAssemblies (162ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (170ms)
+			TypeCache.Refresh (169ms)
+				TypeCache.ScanAssembly (157ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (351ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (300ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (14ms)
+			ProcessInitializeOnLoadAttributes (220ms)
+			ProcessInitializeOnLoadMethodAttributes (46ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image C:\Users\Fantin Jacopo\Documents\GitHub\Progetto_AI\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Fantin Jacopo\Documents\GitHub\Progetto_AI\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.920 seconds
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.842 seconds
+Domain Reload Profiling: 1759ms
+	BeginReloadAssembly (365ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (479ms)
+		LoadAssemblies (372ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (200ms)
+			TypeCache.Refresh (167ms)
+				TypeCache.ScanAssembly (149ms)
+			BuildScriptInfoCaches (27ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (843ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (658ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (91ms)
+			ProcessInitializeOnLoadAttributes (529ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3174 unused Assets / (1.1 MB). Loaded Objects now: 3735.
+Memory consumption went from 116.2 MB to 115.0 MB.
+Total: 5.424800 ms (FindLiveObjects: 0.395300 ms CreateObjectMapping: 0.359900 ms MarkObjects: 3.686300 ms  DeleteObjects: 0.982700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 10783.272603 seconds.
+  path: Assets/Arcade_Car_Physics/Prefabs/Car03.prefab
+  artifactKey: Guid(0e395c70fae214776ac9f3f8cb609d69) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Prefabs/Car03.prefab using Guid(0e395c70fae214776ac9f3f8cb609d69) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f584749df26ca5983da20e866f17e486') in 0.174014 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 110
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Arcade_Car_Physics/Models/RaceTracks/roadCornerLarge.fbx
+  artifactKey: Guid(7a919246d935a40519db05b590422953) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Models/RaceTracks/roadCornerLarge.fbx using Guid(7a919246d935a40519db05b590422953) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '11d40debc524277407caa9bfbfc3302f') in 0.0700715 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Arcade_Car_Physics/Models/RaceTracks/ramp.fbx
+  artifactKey: Guid(1e0df56b5ca894ea7ba0c84036f31b6f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Models/RaceTracks/ramp.fbx using Guid(1e0df56b5ca894ea7ba0c84036f31b6f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1aa18e9ebf14578da24e1bcc08543d12') in 0.0307555 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Arcade_Car_Physics/Demo Lighting Settings.lighting
+  artifactKey: Guid(e03eeb66eb7ea960db3cb10c265fc1f9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Demo Lighting Settings.lighting using Guid(e03eeb66eb7ea960db3cb10c265fc1f9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '50e067d8110cab9ef33b6c99ebdcb996') in 0.0209033 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Arcade_Car_Physics/Models/RaceTracks/roadHalfCircle.fbx
+  artifactKey: Guid(56cdd4f18f2d24cdda05105d3ae565da) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Models/RaceTracks/roadHalfCircle.fbx using Guid(56cdd4f18f2d24cdda05105d3ae565da) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b30ce6c8a4eac7d0cb92427e96780e25') in 0.0394306 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Arcade_Car_Physics/Scripts/EngineSoundManager.cs
+  artifactKey: Guid(46cf26a406bad0b4280494683f9c6af6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Scripts/EngineSoundManager.cs using Guid(46cf26a406bad0b4280494683f9c6af6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'df59383f0f481d84abc4a7c64531926f') in 0.0127254 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Arcade_Car_Physics/Textures/Black smoke/blackSmoke11.png
+  artifactKey: Guid(71219eea033c14a6f81e7161f7a511a8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Textures/Black smoke/blackSmoke11.png using Guid(71219eea033c14a6f81e7161f7a511a8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f18d1672021f0f64eda4103ac2e95d2e') in 0.0631676 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Arcade_Car_Physics/Textures/Black smoke/blackSmoke13.png
+  artifactKey: Guid(45b3b73d533e1409f96f99a4da559a17) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Textures/Black smoke/blackSmoke13.png using Guid(45b3b73d533e1409f96f99a4da559a17) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9c34b0e9860777dd866c5aeacf5a039d') in 0.0276395 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Arcade_Car_Physics/Sounds/Boost.wav
+  artifactKey: Guid(7c29c309722a2444582a425e8e6aeb77) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Sounds/Boost.wav using Guid(7c29c309722a2444582a425e8e6aeb77) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '21d4ef80fc62d303f3ab04743f6af6d9') in 0.0563596 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Arcade_Car_Physics/Textures/Black smoke/blackSmoke00.mat
+  artifactKey: Guid(e646da43bf70b4fa299d11c7b6d8bb86) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Textures/Black smoke/blackSmoke00.mat using Guid(e646da43bf70b4fa299d11c7b6d8bb86) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '49f0bd41eade93873bb7ca4915084eb2') in 0.0157397 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Arcade_Car_Physics/CarBody.physicMaterial
+  artifactKey: Guid(d95b5e49839d84ee191c3c6961b60124) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/CarBody.physicMaterial using Guid(d95b5e49839d84ee191c3c6961b60124) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '218bb57d4825e4f8822177f9494d4507') in 0.0108666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Materials/textures/aerial_asphalt_01_nor_gl_8k.exr
+  artifactKey: Guid(f2171ae1c417dc647801452d3b91e68c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Materials/textures/aerial_asphalt_01_nor_gl_8k.exr using Guid(f2171ae1c417dc647801452d3b91e68c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b6b1a06959f25fe5ba7c9bc111e0c1cf') in 0.0335857 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Arcade_Car_Physics/Scripts/DemoScripts/RaceTrackCheckpointsManager.cs
+  artifactKey: Guid(69859d0697e98db7faf8bd857388ad5a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Scripts/DemoScripts/RaceTrackCheckpointsManager.cs using Guid(69859d0697e98db7faf8bd857388ad5a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a74974e8dc7c1f9c64f1d624c08ce727') in 0.0105949 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/SplineMesh/Showcase.unity
+  artifactKey: Guid(3e717c5efb24aa349a1ed37e8978438b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SplineMesh/Showcase.unity using Guid(3e717c5efb24aa349a1ed37e8978438b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '490e31e599b83d293f9b116ba2608716') in 0.0465015 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/SplineMesh/Doc.txt
+  artifactKey: Guid(9f209adc2d95dcf4fb2ccf5d8355a3b9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SplineMesh/Doc.txt using Guid(9f209adc2d95dcf4fb2ccf5d8355a3b9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c65509a53557ab5a506139d160856929') in 0.0096237 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Arcade_Car_Physics/Models/RaceTracks/roadCurved.fbx
+  artifactKey: Guid(4647e0c8c427641fb9f80b944a61b948) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Models/RaceTracks/roadCurved.fbx using Guid(4647e0c8c427641fb9f80b944a61b948) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd2ba45fd49a9198ae5f3b60e5016a9d9') in 0.0348495 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Arcade_Car_Physics/Prefabs/Truck01.prefab
+  artifactKey: Guid(7c4c92a669340bf6cb40a22ce72a1a28) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Prefabs/Truck01.prefab using Guid(7c4c92a669340bf6cb40a22ce72a1a28) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e300af91292c393395ab2ce9061e18bb') in 0.0915204 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 160
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Arcade_Car_Physics/Scripts/DemoScripts/CameraFollow.cs
+  artifactKey: Guid(09b11419606a3482ba74f6545db6aff9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Scripts/DemoScripts/CameraFollow.cs using Guid(09b11419606a3482ba74f6545db6aff9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e5c5d22a8598b2aef0a453893fab11d3') in 0.0098566 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Arcade_Car_Physics/Models/Car04.mtl
+  artifactKey: Guid(82dd0eaca7fff4036ae03ccb3b589368) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Models/Car04.mtl using Guid(82dd0eaca7fff4036ae03ccb3b589368) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f40ab0ccd9cc78928005c3c74fbd59f3') in 0.008425 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Arcade_Car_Physics/Prefabs/Truck01Assembled.prefab
+  artifactKey: Guid(526c4681f3669acaea04d297c5bbe304) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Prefabs/Truck01Assembled.prefab using Guid(526c4681f3669acaea04d297c5bbe304) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '08854bf090ff50e620ad8d729934e5b6') in 0.068954 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 239
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Materials/textures/aerial_asphalt_01_disp_8k.png
+  artifactKey: Guid(3fb53a759e6084148b3e218872d08c99) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Materials/textures/aerial_asphalt_01_disp_8k.png using Guid(3fb53a759e6084148b3e218872d08c99) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f4071fd32ce5c0a8515cd51508b8ef1e') in 0.0255016 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Arcade_Car_Physics/Textures/White puff/whitePuff12.png
+  artifactKey: Guid(194682e242a46433f958b8c0a6bef3bd) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Textures/White puff/whitePuff12.png using Guid(194682e242a46433f958b8c0a6bef3bd) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6405d3bfbcc891d7fefacdf09839d993') in 0.0262645 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Arcade_Car_Physics/Textures/White puff/whitePuff08.png
+  artifactKey: Guid(232bfdd6de13a43c693d4b64a077f4b2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Textures/White puff/whitePuff08.png using Guid(232bfdd6de13a43c693d4b64a077f4b2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '74ee1425ee74cb11cd157bd80034d2b6') in 0.026323 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Arcade_Car_Physics/Textures/Flash/flash01.png
+  artifactKey: Guid(b27858f968b704ffd871161dfa2d8302) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Textures/Flash/flash01.png using Guid(b27858f968b704ffd871161dfa2d8302) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '794664e058de91a8456889046eeabf4f') in 0.0306318 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Arcade_Car_Physics/Textures/Explosion/explosion01.png
+  artifactKey: Guid(88dc4fc0715d6485b93f3df55945aac3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Textures/Explosion/explosion01.png using Guid(88dc4fc0715d6485b93f3df55945aac3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9043181f8bf48d8d7f799179ba02bd8d') in 0.0298254 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Arcade_Car_Physics/Textures/Explosion/explosion00.png
+  artifactKey: Guid(6c31ebde8e96946b6a6d6ef4ac2991b1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Textures/Explosion/explosion00.png using Guid(6c31ebde8e96946b6a6d6ef4ac2991b1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '06ec675037b3ee78cf30462839353ba0') in 0.0261248 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Arcade_Car_Physics/Textures/Black smoke/blackSmoke18.png
+  artifactKey: Guid(13ef6e511d3134413a687fe0bdf00b24) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Textures/Black smoke/blackSmoke18.png using Guid(13ef6e511d3134413a687fe0bdf00b24) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3ea794659cebebaea2bdf925f23cbfc3') in 0.0287043 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Arcade_Car_Physics/Textures/Flash/flash06.png
+  artifactKey: Guid(77cf504afeef643e7a4cc860cd1b7a2a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Textures/Flash/flash06.png using Guid(77cf504afeef643e7a4cc860cd1b7a2a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '64fce4b43f0edcc0545c1d94012ee570') in 0.0250723 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Arcade_Car_Physics/Models/RaceTracks/roadRampLongCurvedWall.fbx
+  artifactKey: Guid(ef61208449dcd47e6a5425cd02669c29) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Models/RaceTracks/roadRampLongCurvedWall.fbx using Guid(ef61208449dcd47e6a5425cd02669c29) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4d6859c38b911d26c4b19655a34af45d') in 0.0375966 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Arcade_Car_Physics/README.pdf
+  artifactKey: Guid(61218936e6fc1dad484353a12e08523d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/README.pdf using Guid(61218936e6fc1dad484353a12e08523d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cbb877caa5be489bd953fe768f541d11') in 0.0082964 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Arcade_Car_Physics/Textures/Black smoke/blackSmoke05.png
+  artifactKey: Guid(5abeebbef27cc403793acf85260dc5ff) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Textures/Black smoke/blackSmoke05.png using Guid(5abeebbef27cc403793acf85260dc5ff) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2801d3a3752b25d1f5cddf94bf022560') in 0.0289622 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002339 seconds.
+  path: Assets/Arcade_Car_Physics/Models/Bike01.obj
+  artifactKey: Guid(e8ea435171096422382841aad9aa8d01) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Models/Bike01.obj using Guid(e8ea435171096422382841aad9aa8d01) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd6df88f403e8ce4bd4af148f7bd03d47') in 0.0398607 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Arcade_Car_Physics/Models/RaceTracks/Rock01.fbx
+  artifactKey: Guid(6f4800dc5e24a73edae5659c7e72bab0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Models/RaceTracks/Rock01.fbx using Guid(6f4800dc5e24a73edae5659c7e72bab0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c6e13066a25f41cc98e23c90acbe0efc') in 0.0285825 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Arcade_Car_Physics/Sounds/car-engine-starting.wav
+  artifactKey: Guid(66753e6b7787e4d71b562b3ef3acac36) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Sounds/car-engine-starting.wav using Guid(66753e6b7787e4d71b562b3ef3acac36) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '94ef15927a21e0f06c111f23cf06162d') in 0.0411705 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Arcade_Car_Physics/Textures/Explosion/explosion07.png
+  artifactKey: Guid(32a9b7b1ecd3940d2b0fc1690bf8a563) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Textures/Explosion/explosion07.png using Guid(32a9b7b1ecd3940d2b0fc1690bf8a563) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'be7c63a01c00d777760bd3bfd4da6c1e') in 0.0338042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Arcade_Car_Physics/Textures/White puff/whitePuff11.png
+  artifactKey: Guid(9737dfad821ac4ca8a4efcaeeb1cfb68) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Textures/White puff/whitePuff11.png using Guid(9737dfad821ac4ca8a4efcaeeb1cfb68) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8c0134d33040a7b5e07a211476b174a9') in 0.0284566 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Arcade_Car_Physics/Models/RaceTracks/roadStraightBridgeStart.fbx
+  artifactKey: Guid(bf208af2df85c4277be712dc8b5ce04e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Models/RaceTracks/roadStraightBridgeStart.fbx using Guid(bf208af2df85c4277be712dc8b5ce04e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '18e1b2030cdd3101c9a6ad098774015f') in 0.0452989 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SplineMesh/Scripts/Editor/SplineExtrusionEditor.cs
+  artifactKey: Guid(7f8d2f224507f8d4881b64654b6cb902) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SplineMesh/Scripts/Editor/SplineExtrusionEditor.cs using Guid(7f8d2f224507f8d4881b64654b6cb902) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '68d901aedc8b1bb886e9b6a99a7c9fd9') in 0.0104101 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/SplineMesh/Scripts/Example/ExampleFollowSpline.cs
+  artifactKey: Guid(371753988c008004ca1da9ce435ba75b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SplineMesh/Scripts/Example/ExampleFollowSpline.cs using Guid(371753988c008004ca1da9ce435ba75b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cb922bcb656059de921c9816f83ecec8') in 0.0093129 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/Arcade_Car_Physics/Textures/White puff/whitePuff14.png
+  artifactKey: Guid(32e96d0c5297a4d689e2a6d3d71a7dda) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Textures/White puff/whitePuff14.png using Guid(32e96d0c5297a4d689e2a6d3d71a7dda) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5154eb11af18171e4fdadadb6628ea0c') in 0.0365599 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/SplineMesh/DemoAssets/Mesh/cylinder.dae
+  artifactKey: Guid(500594a39d643774c8e028335ee33da7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SplineMesh/DemoAssets/Mesh/cylinder.dae using Guid(500594a39d643774c8e028335ee33da7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'dcd4add47973ac5bda7f57fce4b30159') in 0.0278291 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Arcade_Car_Physics/Textures/White puff/whitePuff16.png
+  artifactKey: Guid(5020814ee41bb4d71aeffd906a8bb55f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Textures/White puff/whitePuff16.png using Guid(5020814ee41bb4d71aeffd906a8bb55f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'adced44d1c7c36a554ecfcdcdf72aa93') in 0.0255625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SplineMesh/Scripts/Utils/MeshUtility.cs
+  artifactKey: Guid(c524c1f7e9141014aba14c56c6b1baad) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SplineMesh/Scripts/Utils/MeshUtility.cs using Guid(c524c1f7e9141014aba14c56c6b1baad) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4dab9ebe780820b02804c57e9291936c') in 0.0114429 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Arcade_Car_Physics/Skybox Gradient.shader
+  artifactKey: Guid(c40b3327422715c5fabe345a93f9f60e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Skybox Gradient.shader using Guid(c40b3327422715c5fabe345a93f9f60e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bf286662d7309722b54f61b2500dcf77') in 0.0154049 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Materials/textures/aerial_asphalt_01_diff_8k.jpg
+  artifactKey: Guid(0ce10b0c4028849498182d5c8e126b33) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Materials/textures/aerial_asphalt_01_diff_8k.jpg using Guid(0ce10b0c4028849498182d5c8e126b33) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '789d813c46ef1fab1386b0088db26394') in 0.0282739 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Main.unity
+  artifactKey: Guid(ce44cd94a718b6e42a4fb92c102c3c3b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Main.unity using Guid(ce44cd94a718b6e42a4fb92c102c3c3b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f169e456a7db4f3033429bb019328f5a') in 0.0154109 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Arcade_Car_Physics/Scripts/DemoScripts/CheckPointEvent.cs
+  artifactKey: Guid(612c939a1a1ee75019ab35b0576a8ae9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Scripts/DemoScripts/CheckPointEvent.cs using Guid(612c939a1a1ee75019ab35b0576a8ae9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd014167481eadeb9b63d283c48a3b5b8') in 0.0110325 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Materials/textures/aerial_asphalt_01_rough_8k.jpg
+  artifactKey: Guid(9c7aa167b09e4e944a7b65903f555c28) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Materials/textures/aerial_asphalt_01_rough_8k.jpg using Guid(9c7aa167b09e4e944a7b65903f555c28) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '89b6942df6e9c0235752d3d9fe334abb') in 0.024764 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/SplineMesh/Scripts/Example/ExampleSower.cs
+  artifactKey: Guid(67bc80d4c1c799346b57921fb3aaeeeb) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SplineMesh/Scripts/Example/ExampleSower.cs using Guid(67bc80d4c1c799346b57921fb3aaeeeb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4711947f16ff03fc37400ede2ccb8069') in 0.0101979 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Arcade_Car_Physics/Textures/Flash/flash02.png
+  artifactKey: Guid(7bdf82f52466d465ba55372311a3534c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Textures/Flash/flash02.png using Guid(7bdf82f52466d465ba55372311a3534c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '021c48690fb0a8f4346f71d5dab0f0d4') in 0.0270947 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Arcade_Car_Physics/Sounds/car-engine-rolling.wav
+  artifactKey: Guid(818f7f711bdaa48ba960398dcec20f19) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Sounds/car-engine-rolling.wav using Guid(818f7f711bdaa48ba960398dcec20f19) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '21d467b3c8aee15e35e2f1c102866283') in 0.0621071 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Arcade_Car_Physics/Models/RaceTracks/roadStraightLong.fbx
+  artifactKey: Guid(f0db688d29cd347d5852dfde5943069b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Models/RaceTracks/roadStraightLong.fbx using Guid(f0db688d29cd347d5852dfde5943069b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c34a0b70d804cdf2f315783e9c47bde7') in 0.0369221 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Arcade_Car_Physics/Prefabs/MonsterTruck01.prefab
+  artifactKey: Guid(3bfad089e9aa740079c104d17b36d5e7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Prefabs/MonsterTruck01.prefab using Guid(3bfad089e9aa740079c104d17b36d5e7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '378e5bee373fd85ba23ce1b29a1de1a2') in 0.0881226 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 88
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/SplineMesh/DemoAssets/Materials/Default.mat
+  artifactKey: Guid(c2ded7645929e1746befa52ddd920fbb) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SplineMesh/DemoAssets/Materials/Default.mat using Guid(c2ded7645929e1746befa52ddd920fbb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '147de7327e7da7f096af899d857e5f38') in 0.0120797 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Arcade_Car_Physics/Textures/White puff/whitePuff15.png
+  artifactKey: Guid(2f8588ceecaf1419583b15acd29f0c4b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Textures/White puff/whitePuff15.png using Guid(2f8588ceecaf1419583b15acd29f0c4b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '23b52cba4848edd37bf8020c049fa311') in 0.0250196 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Arcade_Car_Physics/Models/Car02.obj
+  artifactKey: Guid(2bdb67dd109374a0cb46d1c3f285d23d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Models/Car02.obj using Guid(2bdb67dd109374a0cb46d1c3f285d23d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '55c94861513fc3f93532d02f15cbd943') in 0.0494233 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Arcade_Car_Physics/Models/RaceTracks/Materials/road.mat
+  artifactKey: Guid(8e4b871f5d20842fbafceb61e90e35b5) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Models/RaceTracks/Materials/road.mat using Guid(8e4b871f5d20842fbafceb61e90e35b5) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '43471fd7018f32a9aea694a6cf069f79') in 0.012919 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/SplineMesh/DemoAssets/Mesh/Materials/texture.mat
+  artifactKey: Guid(58433726f5cc13f4dbfb52944dbbcc11) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SplineMesh/DemoAssets/Mesh/Materials/texture.mat using Guid(58433726f5cc13f4dbfb52944dbbcc11) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2679bfdd3f3f0f6d5cb1c6ef8ed7a9ef') in 0.0110232 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Arcade_Car_Physics/Models/RaceTracks/Materials/pylon.mat
+  artifactKey: Guid(1ed98b14d8dfd4e6cab19727f93f4ee9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Models/RaceTracks/Materials/pylon.mat using Guid(1ed98b14d8dfd4e6cab19727f93f4ee9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '73d7d6f55983be9bc86179bda962425e') in 0.012832 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Arcade_Car_Physics/Models/RaceTracks/Materials/glass.mat
+  artifactKey: Guid(ed96969b0cf0b4413b279284eb907496) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Models/RaceTracks/Materials/glass.mat using Guid(ed96969b0cf0b4413b279284eb907496) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '971bf674ad554986f8c319f210f4ed98') in 0.0140011 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Arcade_Car_Physics/Textures/Black smoke/blackSmoke00.png
+  artifactKey: Guid(4da7ae0e024f749aea14c44c3fd6f842) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Textures/Black smoke/blackSmoke00.png using Guid(4da7ae0e024f749aea14c44c3fd6f842) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6f89b23e42fd88438f78f5822912d3d8') in 0.0326242 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Arcade_Car_Physics/Models/Truck01.obj
+  artifactKey: Guid(aa2c83b193baa4e749c9ce8dc2a975fa) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Models/Truck01.obj using Guid(aa2c83b193baa4e749c9ce8dc2a975fa) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8d735d58ee9de8e24bebdb1de4e03503') in 0.0553981 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Arcade_Car_Physics/Models/Car03.obj
+  artifactKey: Guid(67c19608083624fca91e4b6da4f20740) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Models/Car03.obj using Guid(67c19608083624fca91e4b6da4f20740) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c744b3bb3a08beac02b7ea6046ef3984') in 0.0594893 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SplineMesh/Scripts/MeshProcessing/SourceMesh.cs
+  artifactKey: Guid(6809125401b4116468732e472cad438b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SplineMesh/Scripts/MeshProcessing/SourceMesh.cs using Guid(6809125401b4116468732e472cad438b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '81d8b6f69de4c046f47aa6a6e681fab6') in 0.0087336 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Arcade_Car_Physics/Prefabs/Trailor01.prefab
+  artifactKey: Guid(6807f53470d2464a6aaa9df2fea62327) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Prefabs/Trailor01.prefab using Guid(6807f53470d2464a6aaa9df2fea62327) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '72500d3eeb26ee673db54e1d0188ffb6') in 0.0150547 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 79
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Arcade_Car_Physics/Textures/Flash/flash05.png
+  artifactKey: Guid(56c1284a1e5424cc99ae9d7e14bd7231) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Textures/Flash/flash05.png using Guid(56c1284a1e5424cc99ae9d7e14bd7231) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '71b2ca59d8c45be802ae108629c07869') in 0.0244821 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Arcade_Car_Physics/Textures/Black smoke/blackSmoke03.png
+  artifactKey: Guid(da4751137b48441639f2c006be3706d3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Arcade_Car_Physics/Textures/Black smoke/blackSmoke03.png using Guid(da4751137b48441639f2c006be3706d3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8187a5b7b568976c6a7ac21067071674') in 0.0319661 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SplineMesh/DemoAssets/Prefabs/Light.prefab
+  artifactKey: Guid(9494ee67b305f9e4da72aea2e0ca82dc) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SplineMesh/DemoAssets/Prefabs/Light.prefab using Guid(9494ee67b305f9e4da72aea2e0ca82dc) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '02475ea01e8358834e0cb3404a662cc2') in 0.0137811 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/SplineMesh/Scripts/MeshProcessing/MeshVertex.cs
+  artifactKey: Guid(9956472d7384e9140aecfec0a88b1962) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/SplineMesh/Scripts/MeshProcessing/MeshVertex.cs using Guid(9956472d7384e9140aecfec0a88b1962) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ae93830bceb001f72649a19497116964') in 0.0088639 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
