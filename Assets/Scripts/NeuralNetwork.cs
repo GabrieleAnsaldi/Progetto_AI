@@ -5,6 +5,12 @@ public class NeuralNetwork
     public int[] network = new int[] {2, 4, 4, 2 }; //modifica pure come vuoi, il primo valore è il numero di input, l'ultimo di output
     public Layer[] layers;
 
+    public NeuralNetwork(int[] network)
+    {
+        this.network = network;
+        Awake();
+    }
+
     public class Layer{
         public float[,] weights; // weights[i,j] = nodo i, peso j
         public float[] biases; 
@@ -13,12 +19,13 @@ public class NeuralNetwork
         private int n_inputs;
         public int n_nodes{ get; private set;}
 
+
         public Layer(int n_inputs, int n_nodes)
         {
             this.n_inputs = n_inputs;
             this.n_nodes = n_nodes;
 
-            weights = new float[n_inputs, n_nodes];
+            weights = new float[n_nodes, n_inputs];
             biases = new float[n_nodes];
             nodes = new float[n_nodes];
         }
@@ -73,6 +80,7 @@ public class NeuralNetwork
         {
             layers[i] = new Layer(network[i], network[i + 1]);
         }
+        Mutate(0.5f, 0.5f);
     }
     public void Mutate(float mutationAmount, float MutationChance){
         foreach (Layer l in layers) l.Mutate(mutationAmount, MutationChance);

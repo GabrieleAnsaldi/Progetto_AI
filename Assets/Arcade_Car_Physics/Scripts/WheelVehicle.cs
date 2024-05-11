@@ -268,18 +268,19 @@ namespace VehicleBehaviour {
             // Get all the inputs!
             if (isPlayer) {
                 // Accelerate & brake
-                if (throttleInput != "" && throttleInput != null)
-                {
-                    throttle = GetInput(throttleInput) - GetInput(brakeInput);
-                }
+                //if (throttleInput != "" && throttleInput != null)
+                //{
+                //    throttle = GetInput(throttleInput) - GetInput(brakeInput);
+                //}
+                throttle = throttleAI;
                 // Boost
-                boosting = (GetInput(boostInput) > 0.5f);
+                boosting = /*(GetInput(boostInput) > 0.5f)*/false;
                 // Turn
-                steering = turnInputCurve.Evaluate(GetInput(turnInput)) * steerAngle;
+                steering = /*turnInputCurve.Evaluate(GetInput(turnInput)) * steerAngle*/steeringAI;
                 // Dirft
-                drift = GetInput(driftInput) > 0 && rb.velocity.sqrMagnitude > 100;
+                drift = /*GetInput(driftInput) > 0 && rb.velocity.sqrMagnitude > 100*/false;
                 // Jump
-                jumping = GetInput(jumpInput) != 0;
+                jumping = /*GetInput(jumpInput) != 0*/false;
             }
 
             // Direction
@@ -372,6 +373,15 @@ namespace VehicleBehaviour {
             
             // Downforce
             rb.AddForce(-transform.up * speed * downforce);
+        }
+
+        float throttleAI = 0;
+        float steeringAI = 0;
+
+        public void Move(float speed, float turn)
+        {
+            throttleAI = speed;
+            steeringAI = turn;
         }
 
         // Reposition the car to the start position
