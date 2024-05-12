@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class NeuralNetwork
 {
-    public int[] network = new int[] {2, 4, 4, 2 }; //modifica pure come vuoi, il primo valore è il numero di input, l'ultimo di output
+    public int[] network; 
     public Layer[] layers;
 
     public NeuralNetwork(int[] network)

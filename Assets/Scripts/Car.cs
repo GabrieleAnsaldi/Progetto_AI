@@ -12,6 +12,8 @@ public class Car : MonoBehaviour
     public bool LapFinished = false;
     public int MaxScore = 0;
     public float viewdistance = 10f;
+    static int i = 0;
+    public int id = i++;
 
     public event EventHandler CarStopped;
     float[] outputs;
