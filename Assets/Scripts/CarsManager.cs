@@ -3,9 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.Timers;
+using TMPro;
+using NUnit.Framework.Internal;
 
 public class CarsManager : MonoBehaviour
 {
+    [SerializeField] Camera gameCamera;
+    [SerializeField] TextMeshPro bestScoreText;
+    [SerializeField] TextMeshPro bestCarText;
     [SerializeField] GameObject carPrefab;
     [SerializeField] Vector3 startPosition;
     [SerializeField] int n_cars;
@@ -15,6 +20,7 @@ public class CarsManager : MonoBehaviour
     List<Car> cars = new List<Car>();
     int BestScore, runningCars, checkpoints;
     Car bestCar;
+    Car bestRunningCar;
     
     float MutationAmount = .5f, MutationChance = .5f;
 
@@ -30,6 +36,7 @@ public class CarsManager : MonoBehaviour
         baseNN = new NeuralNetwork(shape);
         NewGeneration();
         bestCar = cars[0];
+        bestRunningCar = bestCar;
         checkpoints = checkpointsParent.transform.childCount;
     }
 
@@ -41,7 +48,6 @@ public class CarsManager : MonoBehaviour
 
     void OnCarStop(object sender, EventArgs e)
     {
-        
         //check if the car was the last one running
         Car car = (sender as GameObject).GetComponent<Car>();
         runningCars--;
@@ -58,10 +64,21 @@ public class CarsManager : MonoBehaviour
             MutationChance = Mathf.Clamp(checkpoints - BestScore, 0.01f, 0.5f);
 
             baseNN = new NeuralNetwork(shape, bestCar.NN.CopyLayers());
-
+            bestScoreText.text = "Best Score:" + BestScore;
+            bestCarText.text = "Best Car:" + bestCar.id;
             NewGeneration();
         }
         //UpdateCamera();
+    }
+
+    void OnCheckpointReached(object sender, EventArgs e)
+    {
+        Car car = (sender as GameObject).GetComponent<Car>();
+        if (car.MaxScore > bestRunningCar.MaxScore)
+        {
+            bestRunningCar = car;
+            GetComponent<Camera>().GetComponent<CameraController>().target = bestRunningCar.gameObject;
+        }
     }
 
     void NewGeneration()

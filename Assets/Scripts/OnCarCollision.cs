@@ -31,7 +31,7 @@ public class OnCarCollision : MonoBehaviour
             Debug.Log("Auto " +car.id + " colpisce checkpoint " + checkpoint);
             if (checkpoint - car.Score == 1)
             {
-                car.Score = checkpoint;
+                car.ReachedCheckpoint(checkpoint);
                 car.StartTimer();
             }
             else if (checkpoint == 0 && car.Score == checkpointsParent.transform.childCount) //finito il giro

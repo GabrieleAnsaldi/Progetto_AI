@@ -7,6 +7,8 @@ using System.Timers;
 
 public class Car : MonoBehaviour
 {
+    [SerializeField] LayerMask bordersLayer;
+
     public NeuralNetwork NN;
     public Timer timer;
     [SerializeField] int time = 10;
@@ -19,6 +21,7 @@ public class Car : MonoBehaviour
     public int id = i++;
 
     public event EventHandler CarStopped;
+    public event EventHandler CheckpointReached;
     float[] outputs;
 
     void Start()
@@ -128,7 +131,6 @@ public class Car : MonoBehaviour
         float[] distances = new float[n_raycasts];
 
         RaycastHit hit;
-        int layerMask = 1 << LayerMask.NameToLayer("Plane"); // Create a mask for the "Plane" layer
 
         for (int i = 0; i < n_raycasts; i++)
         {
@@ -137,9 +139,9 @@ public class Car : MonoBehaviour
             Vector3 direction = rotation * transform.forward;
 
             Vector3 origin = gameObject.transform.position + transform.up * 0.01f;
-
+            Debug.DrawLine(origin, origin + direction * viewdistance, Color.green);
             // Use the layer mask in the raycast
-            if (Physics.Raycast(origin, direction, out hit, viewdistance, layerMask))
+            if (Physics.Raycast(origin, direction, out hit, viewdistance, ~(bordersLayer), QueryTriggerInteraction.Ignore))
             {
                 Debug.DrawLine(origin, hit.point, Color.red);
                 Debug.Log("hit plane");
@@ -167,6 +169,12 @@ public class Car : MonoBehaviour
         Eliminated = true;
         Score = 0;
         CarStopped?.Invoke(gameObject, EventArgs.Empty);
+    }
+
+    public void ReachedCheckpoint(int checkpoint)
+    {
+        Score = checkpoint;
+        CheckpointReached?.Invoke(gameObject, EventArgs.Empty);
     }
 }
 
