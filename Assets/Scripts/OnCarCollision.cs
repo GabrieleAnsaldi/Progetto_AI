@@ -13,7 +13,7 @@ public class OnCarCollision : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        //Debug.Log("OnCollisionEnter");
+        Debug.Log("OnCollisionEnter");
         gameObject.GetComponent<WheelVehicle>().IsPlayer = true;
         if (collision.gameObject.tag == "railing")
         {
@@ -27,11 +27,13 @@ public class OnCarCollision : MonoBehaviour
         Debug.Log("OnTriggerEnter");
         if (other.gameObject.tag == "checkpoint")
         {
-            
             int checkpoint = int.Parse(other.gameObject.name.ToString());
-            Debug.Log("Auto colpisce checkpoint " + checkpoint);
+            Debug.Log("Auto " +car.id + " colpisce checkpoint " + checkpoint);
             if (checkpoint - car.Score == 1)
+            {
                 car.Score = checkpoint;
+                car.StartTimer();
+            }
             else if (checkpoint == 0 && car.Score == checkpointsParent.transform.childCount) //finito il giro
             {
                 car.LapFinished = true;

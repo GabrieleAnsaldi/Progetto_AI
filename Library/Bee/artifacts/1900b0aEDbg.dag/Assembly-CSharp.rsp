@@ -388,6 +388,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2023.2.3f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Scripts/Car.cs"
 "Assets/Scripts/CarsManager.cs"
+"Assets/Scripts/cubo.cs"
 "Assets/Scripts/NeuralNetwork.cs"
 "Assets/Scripts/OnCarCollision.cs"
 "Assets/Scripts/RenameCheckpoints.cs"

@@ -7,24 +7,16 @@
       "RelativeMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|c:\\users\\fantin jacopo\\documents\\github\\progetto_ai\\assets\\scripts\\carsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\carsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|c:\\users\\fantin jacopo\\documents\\github\\progetto_ai\\assets\\splinemesh\\scripts\\meshprocessing\\meshbender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|solutionrelative:assets\\splinemesh\\scripts\\meshprocessing\\meshbender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|c:\\users\\fantin jacopo\\documents\\github\\progetto_ai\\assets\\scripts\\neuralnetwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\neuralnetwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|c:\\users\\fantin jacopo\\documents\\github\\progetto_ai\\assets\\scripts\\cubo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cubo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFB44509-D49D-2734-A5A3-D7F41CCC7795}|VehicleBehaviour.csproj|c:\\users\\fantin jacopo\\documents\\github\\progetto_ai\\assets\\arcade_car_physics\\scripts\\vehicleinputs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFB44509-D49D-2734-A5A3-D7F41CCC7795}|VehicleBehaviour.csproj|solutionrelative:assets\\arcade_car_physics\\scripts\\vehicleinputs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|c:\\users\\fantin jacopo\\documents\\github\\progetto_ai\\assets\\scripts\\oncarcollision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\oncarcollision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB44509-D49D-2734-A5A3-D7F41CCC7795}|VehicleBehaviour.csproj|c:\\users\\fantin jacopo\\documents\\github\\progetto_ai\\assets\\arcade_car_physics\\scripts\\wheelvehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFB44509-D49D-2734-A5A3-D7F41CCC7795}|VehicleBehaviour.csproj|solutionrelative:assets\\arcade_car_physics\\scripts\\wheelvehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|c:\\users\\fantin jacopo\\documents\\github\\progetto_ai\\assets\\splinemesh\\scripts\\meshprocessing\\splinemeshtiling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|solutionrelative:assets\\splinemesh\\scripts\\meshprocessing\\splinemeshtiling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,67 +34,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "WheelVehicle.cs",
-              "DocumentMoniker": "C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\Assets\\Arcade_Car_Physics\\Scripts\\WheelVehicle.cs",
-              "RelativeDocumentMoniker": "Assets\\Arcade_Car_Physics\\Scripts\\WheelVehicle.cs",
-              "ToolTip": "C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\Assets\\Arcade_Car_Physics\\Scripts\\WheelVehicle.cs",
-              "RelativeToolTip": "Assets\\Arcade_Car_Physics\\Scripts\\WheelVehicle.cs",
-              "ViewState": "AQIAAIcBAAAAAAAAAAAQwIgBAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T08:06:00.121Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "VehicleInputs.cs",
-              "DocumentMoniker": "C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\Assets\\Arcade_Car_Physics\\Scripts\\VehicleInputs.cs",
-              "RelativeDocumentMoniker": "Assets\\Arcade_Car_Physics\\Scripts\\VehicleInputs.cs",
-              "ToolTip": "C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\Assets\\Arcade_Car_Physics\\Scripts\\VehicleInputs.cs",
-              "RelativeToolTip": "Assets\\Arcade_Car_Physics\\Scripts\\VehicleInputs.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T08:05:59.442Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OnCarCollision.cs",
-              "DocumentMoniker": "C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\Assets\\Scripts\\OnCarCollision.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\OnCarCollision.cs",
-              "ToolTip": "C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\Assets\\Scripts\\OnCarCollision.cs",
-              "RelativeToolTip": "Assets\\Scripts\\OnCarCollision.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAwwCQAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T08:01:38.972Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NeuralNetwork.cs",
-              "DocumentMoniker": "C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\Assets\\Scripts\\NeuralNetwork.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\NeuralNetwork.cs",
-              "ToolTip": "C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\Assets\\Scripts\\NeuralNetwork.cs",
-              "RelativeToolTip": "Assets\\Scripts\\NeuralNetwork.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T08:01:37.295Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CarsManager.cs",
-              "DocumentMoniker": "C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\Assets\\Scripts\\CarsManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CarsManager.cs",
-              "ToolTip": "C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\Assets\\Scripts\\CarsManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CarsManager.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwCkAAAAEAAAA",
+              "Title": "MeshBender.cs",
+              "DocumentMoniker": "C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\Assets\\SplineMesh\\Scripts\\MeshProcessing\\MeshBender.cs",
+              "RelativeDocumentMoniker": "Assets\\SplineMesh\\Scripts\\MeshProcessing\\MeshBender.cs",
+              "ToolTip": "C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\Assets\\SplineMesh\\Scripts\\MeshProcessing\\MeshBender.cs",
+              "RelativeToolTip": "Assets\\SplineMesh\\Scripts\\MeshProcessing\\MeshBender.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAIwGAAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T08:01:35.332Z",
+              "WhenOpened": "2024-05-12T12:34:05.283Z",
               "EditorCaption": ""
             },
             {
@@ -113,9 +53,35 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Car.cs",
               "ToolTip": "C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\Assets\\Scripts\\Car.cs",
               "RelativeToolTip": "Assets\\Scripts\\Car.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAkAAAA",
+              "ViewState": "AQIAAHwAAAAAAAAAAAAAAH0AAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T08:01:33.146Z",
+              "WhenOpened": "2024-05-12T12:25:24.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "cubo.cs",
+              "DocumentMoniker": "C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\Assets\\Scripts\\cubo.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\cubo.cs",
+              "ToolTip": "C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\Assets\\Scripts\\cubo.cs",
+              "RelativeToolTip": "Assets\\Scripts\\cubo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T12:10:00.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SplineMeshTiling.cs",
+              "DocumentMoniker": "C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\Assets\\SplineMesh\\Scripts\\MeshProcessing\\SplineMeshTiling.cs",
+              "RelativeDocumentMoniker": "Assets\\SplineMesh\\Scripts\\MeshProcessing\\SplineMeshTiling.cs",
+              "ToolTip": "C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\Assets\\SplineMesh\\Scripts\\MeshProcessing\\SplineMeshTiling.cs",
+              "RelativeToolTip": "Assets\\SplineMesh\\Scripts\\MeshProcessing\\SplineMeshTiling.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAQwBoAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T11:48:16.728Z",
               "EditorCaption": ""
             }
           ]

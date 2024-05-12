@@ -6,6 +6,7 @@ TagManager:
   tags:
   - railing
   - checkpoint
+  - plane
   layers:
   - Default
   - TransparentFX
@@ -15,8 +16,8 @@ TagManager:
   - UI
   - Car
   - Border
-  - 
-  - 
+  - Checkpoint
+  - plane
   - 
   - 
   - 

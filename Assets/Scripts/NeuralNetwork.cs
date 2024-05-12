@@ -5,6 +5,12 @@ public class NeuralNetwork
     public int[] network; 
     public Layer[] layers;
 
+    public NeuralNetwork(int[] network, Layer[] layers)
+    {
+        this.layers = new Layer[layers.Length];
+        this.network = network;
+        System.Array.Copy(layers, this.layers, layers.Length);
+    }
     public NeuralNetwork(int[] network)
     {
         this.network = network;

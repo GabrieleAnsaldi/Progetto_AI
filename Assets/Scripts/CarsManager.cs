@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using System.Timers;
 
 public class CarsManager : MonoBehaviour
 {
     [SerializeField] GameObject carPrefab;
     [SerializeField] Vector3 startPosition;
     [SerializeField] int n_cars;
-
+    public int[] shape = new int[] { 7, 10, 10, 2 };
     NeuralNetwork baseNN;
     List<GameObject> carsObjects = new List<GameObject>();
     List<Car> cars = new List<Car>();
@@ -26,7 +27,7 @@ public class CarsManager : MonoBehaviour
     {
         /*for (int i = 0; i < checkpointsParent.transform.childCount; i++) //lista di checkpoints
             checkpoints.Add(checkpointsParent.transform.GetChild(i).gameObject);*/
-        baseNN = new NeuralNetwork(new int[] { 7, 10, 10, 2 });
+        baseNN = new NeuralNetwork(shape);
         NewGeneration();
         bestCar = cars[0];
         checkpoints = checkpointsParent.transform.childCount;
@@ -56,7 +57,7 @@ public class CarsManager : MonoBehaviour
             MutationAmount = Mathf.Clamp(checkpoints - BestScore, 0.01f, 0.5f);
             MutationChance = Mathf.Clamp(checkpoints - BestScore, 0.01f, 0.5f);
 
-            baseNN = bestCar.NN;
+            baseNN = new NeuralNetwork(shape, bestCar.NN.CopyLayers());
 
             NewGeneration();
         }
@@ -73,7 +74,7 @@ public class CarsManager : MonoBehaviour
         {
             carsObjects.Add(Instantiate(carPrefab, startPosition, Quaternion.identity));
             cars.Add(carsObjects[i].GetComponent<Car>());
-            NeuralNetwork NN = baseNN;
+            NeuralNetwork NN = new(shape, baseNN.CopyLayers());
             NN.Mutate(MutationAmount, MutationChance);
             cars[i].NN = NN;
 

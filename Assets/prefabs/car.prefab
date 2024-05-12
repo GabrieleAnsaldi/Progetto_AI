@@ -21033,11 +21033,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9ae869dab09ad844bb2c7a2a175003b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  time: 10
   Eliminated: 0
   Score: 0
   LapFinished: 0
   MaxScore: 0
-  viewdistance: 10
+  viewdistance: 20
+  id: 12
 --- !u!114 &4837721419407752870
 MonoBehaviour:
   m_ObjectHideFlags: 0

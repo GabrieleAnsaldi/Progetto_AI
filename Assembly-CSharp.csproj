@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\SplineMesh\Scripts\Utils\UOUtility.cs" />
     <Compile Include="Assets\SplineMesh\Scripts\MeshProcessing\SourceMesh.cs" />
+    <Compile Include="Assets\Scripts\cubo.cs" />
     <Compile Include="Assets\Scripts\Car.cs" />
     <Compile Include="Assets\SplineMesh\Scripts\Example\ExampleContortAlong.cs" />
     <Compile Include="Assets\SplineMesh\Scripts\MeshProcessing\SplineMeshTiling.cs" />

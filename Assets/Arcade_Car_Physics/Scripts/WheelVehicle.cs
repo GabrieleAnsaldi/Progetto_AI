@@ -262,146 +262,34 @@ namespace VehicleBehaviour {
 
         // Update everything
 
-        //void FixedUpdate()
-        //{
-        //    // Mesure current speed
-        //    speed = transform.InverseTransformDirection(rb.velocity).z * 3.6f;
-
-        //    // Get all the inputs!
-        //    if (isPlayer)
-        //    {
-        //        // Accelerate & brake
-        //        //if (throttleInput != "" && throttleInput != null)
-        //        //{
-        //        //    throttle = GetInput(throttleInput) - GetInput(brakeInput);
-        //        //}
-        //        throttle = throttleAI;
-        //        // Boost
-        //        boosting = /*(GetInput(boostInput) > 0.5f)*/false;
-        //        // Turn
-        //        steering = /*turnInputCurve.Evaluate(GetInput(turnInput)) * steerAngle*/steeringAI;
-        //        // Dirft
-        //        drift = /*GetInput(driftInput) > 0 && rb.velocity.sqrMagnitude > 100*/false;
-        //        // Jump
-        //        jumping = /*GetInput(jumpInput) != 0*/false;
-        //    }
-
-        //    // Direction
-        //    foreach (WheelCollider wheel in turnWheel)
-        //    {
-        //        wheel.steerAngle = Mathf.Lerp(wheel.steerAngle, steering, steerSpeed);
-        //    }
-
-        //    foreach (WheelCollider wheel in wheels)
-        //    {
-        //        wheel.motorTorque = 0.0001f;
-        //        wheel.brakeTorque = 0;
-        //    }
-
-        //    // Handbrake
-        //    if (handbrake)
-        //    {
-        //        foreach (WheelCollider wheel in wheels)
-        //        {
-        //            // Don't zero out this value or the wheel completly lock up
-        //            wheel.motorTorque = 0.0001f;
-        //            wheel.brakeTorque = brakeForce;
-        //        }
-        //    }
-        //    else if (throttle != 0 && (Mathf.Abs(speed) < 4 || Mathf.Sign(speed) == Mathf.Sign(throttle)))
-        //    {
-        //        foreach (WheelCollider wheel in driveWheel)
-        //        {
-        //            wheel.motorTorque = throttle * motorTorque.Evaluate(speed) * diffGearing / driveWheel.Length;
-        //        }
-        //    }
-        //    else if (throttle != 0)
-        //    {
-        //        foreach (WheelCollider wheel in wheels)
-        //        {
-        //            wheel.brakeTorque = Mathf.Abs(throttle) * brakeForce;
-        //        }
-        //    }
-
-        //    // Jump
-        //    if (jumping && isPlayer)
-        //    {
-        //        if (!IsGrounded)
-        //            return;
-
-        //        rb.velocity += transform.up * jumpVel;
-        //    }
-
-        //    // Boost
-        //    if (boosting && allowBoost && boost > 0.1f)
-        //    {
-        //        rb.AddForce(transform.forward * boostForce);
-
-        //        boost -= Time.fixedDeltaTime;
-        //        if (boost < 0f) { boost = 0f; }
-
-        //        if (boostParticles.Length > 0 && !boostParticles[0].isPlaying)
-        //        {
-        //            foreach (ParticleSystem boostParticle in boostParticles)
-        //            {
-        //                boostParticle.Play();
-        //            }
-        //        }
-
-        //        if (boostSource != null && !boostSource.isPlaying)
-        //        {
-        //            boostSource.Play();
-        //        }
-        //    }
-        //    else
-        //    {
-        //        if (boostParticles.Length > 0 && boostParticles[0].isPlaying)
-        //        {
-        //            foreach (ParticleSystem boostParticle in boostParticles)
-        //            {
-        //                boostParticle.Stop();
-        //            }
-        //        }
-
-        //        if (boostSource != null && boostSource.isPlaying)
-        //        {
-        //            boostSource.Stop();
-        //        }
-        //    }
-
-        //    // Drift
-        //    if (drift && allowDrift)
-        //    {
-        //        Vector3 driftForce = -transform.right;
-        //        driftForce.y = 0.0f;
-        //        driftForce.Normalize();
-
-        //        if (steering != 0)
-        //            driftForce *= rb.mass * speed / 7f * throttle * steering / steerAngle;
-        //        Vector3 driftTorque = transform.up * 0.1f * steering / steerAngle;
-
-
-        //        rb.AddForce(driftForce * driftIntensity, ForceMode.Force);
-        //        rb.AddTorque(driftTorque * driftIntensity, ForceMode.VelocityChange);
-        //    }
-
-        //    // Downforce
-        //    rb.AddForce(-transform.up * speed * downforce);
-        //}
-
-        float throttleAI = 1f;
-        float steeringAI = 0f;
-
-        public void Move(float speed, float turn)
+        void FixedUpdate()
         {
-            float speeed = transform.InverseTransformDirection(rb.velocity).z * 3.6f;
-            throttleAI = speed;
-            steeringAI = turn;
+            // Mesure current speed
+            speed = transform.InverseTransformDirection(rb.velocity).z * 3.6f;
+
+            // Get all the inputs!
+            if (isPlayer)
+            {
+                // Accelerate & brake
+                //if (throttleInput != "" && throttleInput != null)
+                //{
+                //    throttle = GetInput(throttleInput) - GetInput(brakeInput);
+                //}
+                throttle = throttleAI;
+                // Boost
+                boosting = /*(GetInput(boostInput) > 0.5f)*/false;
+                // Turn
+                steering = /*turnInputCurve.Evaluate(GetInput(turnInput)) * steerAngle*/steeringAI;
+                // Dirft
+                drift = /*GetInput(driftInput) > 0 && rb.velocity.sqrMagnitude > 100*/false;
+                // Jump
+                jumping = /*GetInput(jumpInput) != 0*/false;
+            }
 
             // Direction
             foreach (WheelCollider wheel in turnWheel)
             {
-                wheel.steerAngle = Mathf.Lerp(wheel.steerAngle, steeringAI, steerSpeed);
+                wheel.steerAngle = Mathf.Lerp(wheel.steerAngle, steering, steerSpeed);
             }
 
             foreach (WheelCollider wheel in wheels)
@@ -409,7 +297,8 @@ namespace VehicleBehaviour {
                 wheel.motorTorque = 0.0001f;
                 wheel.brakeTorque = 0;
             }
-            //handbrake
+
+            // Handbrake
             if (handbrake)
             {
                 foreach (WheelCollider wheel in wheels)
@@ -419,18 +308,64 @@ namespace VehicleBehaviour {
                     wheel.brakeTorque = brakeForce;
                 }
             }
-            else if (throttleAI != 0 && (Mathf.Abs(speeed) < 4 || Mathf.Sign(speeed) == Mathf.Sign(throttleAI)))
+            else if (throttle != 0 && (Mathf.Abs(speed) < 4 || Mathf.Sign(speed) == Mathf.Sign(throttle)))
             {
                 foreach (WheelCollider wheel in driveWheel)
                 {
-                    wheel.motorTorque = throttleAI * motorTorque.Evaluate(speeed) * diffGearing / driveWheel.Length;
+                    wheel.motorTorque = throttle * motorTorque.Evaluate(speed) * diffGearing / driveWheel.Length;
                 }
             }
-            else if (throttleAI != 0)
+            else if (throttle != 0)
             {
                 foreach (WheelCollider wheel in wheels)
                 {
-                    wheel.brakeTorque = Mathf.Abs(throttleAI) * brakeForce;
+                    wheel.brakeTorque = Mathf.Abs(throttle) * brakeForce;
+                }
+            }
+
+            // Jump
+            if (jumping && isPlayer)
+            {
+                if (!IsGrounded)
+                    return;
+
+                rb.velocity += transform.up * jumpVel;
+            }
+
+            // Boost
+            if (boosting && allowBoost && boost > 0.1f)
+            {
+                rb.AddForce(transform.forward * boostForce);
+
+                boost -= Time.fixedDeltaTime;
+                if (boost < 0f) { boost = 0f; }
+
+                if (boostParticles.Length > 0 && !boostParticles[0].isPlaying)
+                {
+                    foreach (ParticleSystem boostParticle in boostParticles)
+                    {
+                        boostParticle.Play();
+                    }
+                }
+
+                if (boostSource != null && !boostSource.isPlaying)
+                {
+                    boostSource.Play();
+                }
+            }
+            else
+            {
+                if (boostParticles.Length > 0 && boostParticles[0].isPlaying)
+                {
+                    foreach (ParticleSystem boostParticle in boostParticles)
+                    {
+                        boostParticle.Stop();
+                    }
+                }
+
+                if (boostSource != null && boostSource.isPlaying)
+                {
+                    boostSource.Stop();
                 }
             }
 
@@ -441,9 +376,9 @@ namespace VehicleBehaviour {
                 driftForce.y = 0.0f;
                 driftForce.Normalize();
 
-                if (steeringAI != 0)
-                    driftForce *= rb.mass * speeed / 7f * throttleAI * steeringAI / steerAngle;
-                Vector3 driftTorque = transform.up * 0.1f * steeringAI / steerAngle;
+                if (steering != 0)
+                    driftForce *= rb.mass * speed / 7f * throttle * steering / steerAngle;
+                Vector3 driftTorque = transform.up * 0.1f * steering / steerAngle;
 
 
                 rb.AddForce(driftForce * driftIntensity, ForceMode.Force);
@@ -451,7 +386,72 @@ namespace VehicleBehaviour {
             }
 
             // Downforce
-            rb.AddForce(-transform.up * speeed * downforce);
+            rb.AddForce(-transform.up * speed * downforce);
+        }
+
+        float throttleAI = 1f;
+        float steeringAI = .5f;
+
+        public void Move(float speed, float turn)
+        {
+            //float speeed = transform.InverseTransformDirection(rb.velocity).z * 3.6f;
+            throttleAI = speed;
+            steeringAI = turn;
+
+            //// Direction
+            //foreach (WheelCollider wheel in turnWheel)
+            //{
+            //    wheel.steerAngle = Mathf.Lerp(wheel.steerAngle, steeringAI, steerSpeed);
+            //}
+
+            //foreach (WheelCollider wheel in wheels)
+            //{
+            //    wheel.motorTorque = 0.0001f;
+            //    wheel.brakeTorque = 0;
+            //}
+            ////handbrake
+            //if (handbrake)
+            //{
+            //    foreach (WheelCollider wheel in wheels)
+            //    {
+            //        // Don't zero out this value or the wheel completly lock up
+            //        wheel.motorTorque = 0.0001f;
+            //        wheel.brakeTorque = brakeForce;
+            //    }
+            //}
+            //else if (throttleAI != 0 && (Mathf.Abs(speeed) < 4 || Mathf.Sign(speeed) == Mathf.Sign(throttleAI)))
+            //{
+            //    foreach (WheelCollider wheel in driveWheel)
+            //    {
+            //        wheel.motorTorque = throttleAI * motorTorque.Evaluate(speeed) * diffGearing / driveWheel.Length;
+            //    }
+            //}
+            //else if (throttleAI != 0)
+            //{
+            //    foreach (WheelCollider wheel in wheels)
+            //    {
+            //        wheel.brakeTorque = Mathf.Abs(throttleAI) * brakeForce;
+            //    }
+            //}
+
+            //// Drift
+            //if (drift && allowDrift)
+            //{
+            //    Vector3 driftForce = -transform.right;
+            //    driftForce.y = 0.0f;
+            //    driftForce.Normalize();
+
+            //    if (steeringAI != 0)
+            //        driftForce *= rb.mass * speeed / 7f * throttleAI * steeringAI / steerAngle;
+            //    Vector3 driftTorque = transform.up * 0.1f * steeringAI / steerAngle;
+
+
+            //    rb.AddForce(driftForce * driftIntensity, ForceMode.Force);
+            //    rb.AddTorque(driftTorque * driftIntensity, ForceMode.VelocityChange);
+            //}
+
+            //// Downforce
+            //rb.AddForce(-transform.up * speeed * downforce);
         }
 
         // Reposition the car to the start position
