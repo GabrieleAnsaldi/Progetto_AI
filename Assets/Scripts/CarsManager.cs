@@ -48,9 +48,9 @@ public class CarsManager : MonoBehaviour
     void Update()
     {
         //Destroy all untagged objects
-        foreach (GameObject obj in GameObject.FindObjectsOfType<GameObject>())
+        /*foreach (GameObject obj in GameObject.FindObjectsOfType<GameObject>())
             if (obj.name == "Trail")
-                Destroy(obj);
+                Destroy(obj);*/
     }
 
     void OnCarStop(object sender, EventArgs e)

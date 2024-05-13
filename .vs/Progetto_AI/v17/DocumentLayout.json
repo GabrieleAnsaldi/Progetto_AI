@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\assets\\scripts\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|c:\\users\\fantin jacopo\\documents\\github\\progetto_ai\\assets\\scripts\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\assets\\scripts\\oncarcollision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\oncarcollision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AFB44509-D49D-2734-A5A3-D7F41CCC7795}|VehicleBehaviour.csproj|C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\assets\\arcade_car_physics\\scripts\\wheelvehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFB44509-D49D-2734-A5A3-D7F41CCC7795}|VehicleBehaviour.csproj|solutionrelative:assets\\arcade_car_physics\\scripts\\wheelvehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|c:\\users\\fantin jacopo\\documents\\github\\progetto_ai\\assets\\scripts\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|c:\\users\\fantin jacopo\\documents\\github\\progetto_ai\\assets\\scripts\\carsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\assets\\scripts\\carsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\carsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\assets\\scripts\\oncarcollision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\oncarcollision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|c:\\users\\fantin jacopo\\documents\\github\\progetto_ai\\assets\\scripts\\neuralnetwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\neuralnetwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\assets\\scripts\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D71921-CF79-D6F5-4FA5-BB0F10757573}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +42,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "NeuralNetwork.cs",
+              "DocumentMoniker": "C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\Assets\\Scripts\\NeuralNetwork.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\NeuralNetwork.cs",
+              "ToolTip": "C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\Assets\\Scripts\\NeuralNetwork.cs",
+              "RelativeToolTip": "Assets\\Scripts\\NeuralNetwork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T17:53:28.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "CameraController.cs",
               "DocumentMoniker": "C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\Assets\\Scripts\\CameraController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraController.cs",
@@ -57,20 +74,20 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\CarsManager.cs",
               "ToolTip": "C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\Assets\\Scripts\\CarsManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\CarsManager.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAwwDwAAAA5AAAA",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAgwBAAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-12T14:34:48.863Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "WheelVehicle.cs",
               "DocumentMoniker": "C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\Assets\\Arcade_Car_Physics\\Scripts\\WheelVehicle.cs",
               "RelativeDocumentMoniker": "Assets\\Arcade_Car_Physics\\Scripts\\WheelVehicle.cs",
               "ToolTip": "C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\Assets\\Arcade_Car_Physics\\Scripts\\WheelVehicle.cs",
               "RelativeToolTip": "Assets\\Arcade_Car_Physics\\Scripts\\WheelVehicle.cs",
-              "ViewState": "AQIAANoAAAAAAAAAAAA3wOkAAAANAAAA",
+              "ViewState": "AQIAALoBAAAAAAAAAADwv9MBAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-12T14:16:23.791Z",
               "EditorCaption": ""
@@ -83,20 +100,20 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Car.cs",
               "ToolTip": "C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\Assets\\Scripts\\Car.cs",
               "RelativeToolTip": "Assets\\Scripts\\Car.cs",
-              "ViewState": "AQIAAJAAAAAAAAAAAAAmwKUAAAAWAAAA",
+              "ViewState": "AQIAAHwAAAAAAAAAAAAcwKEAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-12T14:08:36.433Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "OnCarCollision.cs",
               "DocumentMoniker": "C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\Assets\\Scripts\\OnCarCollision.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\OnCarCollision.cs",
               "ToolTip": "C:\\Users\\Fantin Jacopo\\Documents\\GitHub\\Progetto_AI\\Assets\\Scripts\\OnCarCollision.cs",
               "RelativeToolTip": "Assets\\Scripts\\OnCarCollision.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAgwCEAAAAlAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-12T14:07:54.594Z",
               "EditorCaption": ""

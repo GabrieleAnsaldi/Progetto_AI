@@ -15,9 +15,9 @@ public class Car : MonoBehaviour
     public int Score = 0;
     public bool LapFinished = false;
     public int MaxScore = 0;
-    public float viewdistance = 10f;
+    [SerializeField] float viewdistance;
     static int i = 0;
-    public int id = i++;
+    public int id;
 
     public event EventHandler CarStopped;
     public event EventHandler CheckpointReached;
@@ -26,6 +26,7 @@ public class Car : MonoBehaviour
     void Start()
     {
         StartTimer();
+        id = i++;
     }
 
     public void StartTimer()
@@ -52,12 +53,13 @@ public class Car : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (time <= 0 && GetComponent<WheelVehicle>().IsPlayer == true)
+        time--;
+        if (time <= 0 && Eliminated)
         {
-            Debug.Log(gameObject.name + " ha finito il tempo.");
+            Debug.Log("Auto " + gameObject.GetComponent<Car>().id + " ha finito il tempo.");
             Fail();
         }
-        time--;
+        
     }
 
     private void MoveCar(float speed, float turn)
@@ -150,9 +152,9 @@ public class Car : MonoBehaviour
             Vector3 direction = rotation * transform.forward;
 
             Vector3 origin = gameObject.transform.position + transform.up * 0.01f;
-            Debug.DrawLine(origin, origin + direction * viewdistance, Color.green);
+            //Debug.DrawLine(origin, origin + direction * viewdistance, Color.green);
             // Use the layer mask in the raycast
-            if (Physics.Raycast(origin, direction, out hit, viewdistance, ~(bordersLayer), QueryTriggerInteraction.Ignore))
+            if (Physics.Raycast(origin, direction, out hit, viewdistance, (bordersLayer), QueryTriggerInteraction.Ignore))
             {
                 Debug.DrawLine(origin, hit.point, Color.red);
                 distances[i] = hit.distance;
@@ -165,8 +167,6 @@ public class Car : MonoBehaviour
         return distances;
     }
 
-    //public GameObject Spline;
-
     public void Fail()
     {
         //Vector3 carPosition = gameObject.transform.position;
@@ -176,7 +176,7 @@ public class Car : MonoBehaviour
 
     public void Stop()
     {
-        Debug.Log(gameObject.name + " è stato eliminato");
+        Debug.Log("Auto" + id + " è stato eliminata");
         MaxScore = Score;
         Eliminated = true;
         Score = 0;

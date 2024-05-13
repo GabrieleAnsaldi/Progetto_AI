@@ -20365,13 +20365,13 @@ MonoBehaviour:
   bordersLayer:
     serializedVersion: 2
     m_Bits: 512
-  time: 250
+  time: 500
   Eliminated: 0
   Score: 0
   LapFinished: 0
   MaxScore: 0
-  viewdistance: 20
-  id: 12
+  viewdistance: 5
+  id: 0
 --- !u!114 &1240678586787303095
 MonoBehaviour:
   m_ObjectHideFlags: 0

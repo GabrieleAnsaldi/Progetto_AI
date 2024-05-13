@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Console
+  m_Title: Project
   m_RootView: {fileID: 3}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 42
+  controlID: 88
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -259,7 +259,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -268,14 +268,14 @@ MonoBehaviour:
     y: 565
     width: 1572
     height: 374
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 15}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
   - {fileID: 15}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -372,7 +372,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -382,16 +382,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 74
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: 74
-  m_LastProjectPath: C:\Users\dansa\Unity Projects\Project_AI\Progetto_AI
+  m_LastProjectPath: C:\Users\Fantin Jacopo\Documents\GitHub\Progetto_AI
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 18890000
-    m_LastClickedID: 35096
-    m_ExpandedIDs: 00000000c2880000c4880000c6880000c88800001689000000ca9a3b
+    m_SelectedIDs: 3ac00000
+    m_LastClickedID: 49210
+    m_ExpandedIDs: 000000007eac000080ac000082ac000084ac000028c00000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -420,7 +420,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c2880000c4880000c6880000c8880000
+    m_ExpandedIDs: 000000007eac000080ac000082ac000084ac0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -517,23 +517,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 24c00000
       m_LastClickedID: 0
-      m_ExpandedIDs: f0addaff0efbffff
+      m_ExpandedIDs: 2488d4ffe491d4ff30fad4ff9a03d5ffdae4ffff02a9000084aa0000227a0200
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: segment 4 mesh
+        m_OriginalName: segment 4 mesh
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 43656
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
         m_ClientGUIView: {fileID: 9}
@@ -1233,9 +1233,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 48.90338, y: 12.467392, z: 24.402695}
+    m_Target: {x: 5.596958, y: 17.265778, z: 21.530434}
     speed: 2
-    m_Value: {x: 48.90338, y: 12.467392, z: 24.402695}
+    m_Value: {x: 5.596958, y: 17.265778, z: 21.530434}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1281,13 +1281,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.029920496, y: 0.91815764, z: -0.38873148, w: -0.07065636}
+    m_Target: {x: -0.24930829, y: -0.6044217, z: 0.20702314, w: -0.72784096}
     speed: 2
-    m_Value: {x: -0.0299203, y: 0.9181516, z: -0.38872892, w: -0.0706559}
+    m_Value: {x: -0.24960718, y: -0.60330176, z: 0.20663954, w: -0.7287136}
   m_Size:
-    m_Target: 2.2564876
+    m_Target: 43.958
     speed: 2
-    m_Value: 2.2564876
+    m_Value: 46.02932
   m_Ortho:
     m_Target: 1
     speed: 2
