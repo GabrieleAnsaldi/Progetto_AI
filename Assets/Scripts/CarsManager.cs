@@ -5,6 +5,8 @@ using System;
 using System.Timers;
 using TMPro;
 using NUnit.Framework.Internal;
+using Unity.VisualScripting;
+using UnityEditor.Search;
 
 public class CarsManager : MonoBehaviour
 {
@@ -21,6 +23,8 @@ public class CarsManager : MonoBehaviour
     int BestScore = 0, runningCars, checkpoints;
     Car bestCar;
     Car bestRunningCar;
+    int bestRoundScore;
+    int previousScore = 0;
     
     float MutationAmount = .5f, MutationChance = .5f;
 
@@ -43,7 +47,10 @@ public class CarsManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        //Destroy all untagged objects
+        foreach (GameObject obj in GameObject.FindObjectsOfType<GameObject>())
+            if (obj.name == "Trail")
+                Destroy(obj);
     }
 
     void OnCarStop(object sender, EventArgs e)
@@ -54,18 +61,19 @@ public class CarsManager : MonoBehaviour
         if(car.MaxScore > BestScore)
         {
             BestScore = car.MaxScore;
+            bestRoundScore = BestScore;
             bestCar = car;
         }
         if (runningCars == 0)
         {
             // new generation with the nn of the best car
             
-            MutationAmount = Mathf.Clamp(checkpoints - BestScore, 0.01f, 0.5f);
-            MutationChance = Mathf.Clamp(checkpoints - BestScore, 0.01f, 0.5f);
+            MutationAmount = Mathf.Clamp(Mathf.Log(Mathf.Abs(BestScore-checkpoints)), 0, 0.6f);
+            MutationChance = Mathf.Clamp(Mathf.Log(Mathf.Abs(BestScore - previousScore)), 0, 0.6f);
 
             baseNN = new NeuralNetwork(shape, bestCar.NN.CopyLayers());
-            bestScoreText.GetComponent<TextMeshPro>().text = "Best Score:" + BestScore;
-            bestCarText.GetComponent<TextMeshPro>().text = "Best Car:" + bestCar.id;
+            bestScoreText.GetComponent<TextMeshProUGUI>().text = "Best Score:" + BestScore;
+            bestCarText.GetComponent<TextMeshProUGUI>().text = "Best Car:" + bestCar.id;
             NewGeneration();
         }
         //UpdateCamera();
@@ -76,7 +84,7 @@ public class CarsManager : MonoBehaviour
     void OnCheckpointReached(object sender, EventArgs e)
     {
         Car car = (sender as GameObject).GetComponent<Car>();
-        if (car.MaxScore > bestRunningCar.MaxScore)
+        if (car.MaxScore > bestRoundScore)
         {
             bestRunningCar = car;
             CameraUpdateHandler?.Invoke(bestRunningCar.gameObject, EventArgs.Empty);
@@ -88,6 +96,8 @@ public class CarsManager : MonoBehaviour
         foreach (Car car in cars) Destroy(car.gameObject);
         carsObjects = new List<GameObject>();
         cars = new List<Car>();
+        previousScore = bestRoundScore;
+        bestRoundScore = 0;
         runningCars = n_cars;
         for (int i = 0; i < n_cars; i++)
         {

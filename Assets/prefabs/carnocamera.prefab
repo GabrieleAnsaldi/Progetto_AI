@@ -20128,9 +20128,6 @@ MonoBehaviour:
   handbrake: 0
   allowDrift: 1
   speed: 0
-  gasParticles:
-  - {fileID: 5923040700444874229}
-  - {fileID: 2484506258704065616}
   allowBoost: 1
   maxBoost: 8
   boost: 8
@@ -20138,11 +20135,9 @@ MonoBehaviour:
   boostForce: 5000
   boosting: 1
   jumping: 1
-  boostParticles:
-  - {fileID: 369017866405606590}
-  - {fileID: 4546625528897149376}
-  boostClip: {fileID: 8300000, guid: 7c29c309722a2444582a425e8e6aeb77, type: 3}
-  boostSource: {fileID: 1494978395056934381}
+  boostParticles: []
+  boostClip: {fileID: 0}
+  boostSource: {fileID: 0}
 --- !u!114 &371435622187019825
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -165,9 +165,9 @@ namespace VehicleBehaviour {
         [SerializeField] float speed = 0.0f;
         public float Speed => speed;
 
-        [Header("Particles")]
-        // Exhaust fumes
-        [SerializeField] ParticleSystem[] gasParticles = new ParticleSystem[0];
+        //[Header("Particles")]
+        //// Exhaust fumes
+        //[SerializeField] ParticleSystem[] gasParticles = new ParticleSystem[0];
 
         [Header("Boost")]
         // Disable boost
@@ -334,41 +334,41 @@ namespace VehicleBehaviour {
             }
 
             // Boost
-            if (boosting && allowBoost && boost > 0.1f)
-            {
-                rb.AddForce(transform.forward * boostForce);
+            //if (boosting && allowBoost && boost > 0.1f)
+            //{
+            //    rb.AddForce(transform.forward * boostForce);
 
-                boost -= Time.fixedDeltaTime;
-                if (boost < 0f) { boost = 0f; }
+            //    boost -= Time.fixedDeltaTime;
+            //    if (boost < 0f) { boost = 0f; }
 
-                if (boostParticles.Length > 0 && !boostParticles[0].isPlaying)
-                {
-                    foreach (ParticleSystem boostParticle in boostParticles)
-                    {
-                        boostParticle.Play();
-                    }
-                }
+            //    if (boostParticles.Length > 0 && !boostParticles[0].isPlaying)
+            //    {
+            //        foreach (ParticleSystem boostParticle in boostParticles)
+            //        {
+            //            boostParticle.Play();
+            //        }
+            //    }
 
-                if (boostSource != null && !boostSource.isPlaying)
-                {
-                    boostSource.Play();
-                }
-            }
-            else
-            {
-                if (boostParticles.Length > 0 && boostParticles[0].isPlaying)
-                {
-                    foreach (ParticleSystem boostParticle in boostParticles)
-                    {
-                        boostParticle.Stop();
-                    }
-                }
+            //    if (boostSource != null && !boostSource.isPlaying)
+            //    {
+            //        boostSource.Play();
+            //    } 
+            //}
+            //else
+            //{
+            //    if (boostParticles.Length > 0 && boostParticles[0].isPlaying)
+            //    {
+            //        foreach (ParticleSystem boostParticle in boostParticles)
+            //        {
+            //            boostParticle.Stop();
+            //        }
+            //    }
 
-                if (boostSource != null && boostSource.isPlaying)
-                {
-                    boostSource.Stop();
-                }
-            }
+            //    if (boostSource != null && boostSource.isPlaying)
+            //    {
+            //        boostSource.Stop();
+            //    }
+            //}
 
             // Drift
             if (drift && allowDrift)

@@ -59,29 +59,42 @@ public class NeuralNetwork
 
         public void Activation() // utilizza la funzione ReLU, non so se sia la migliore per questa rete, in caso utilizziamo la sigmoide
         {
+            //for (int i = 0; i < n_nodes; i++)
+            //{
+            //    nodes[i] = Mathf.Max(0f, nodes[i]);
+            //}
+
+            //SELU
             for (int i = 0; i < n_nodes; i++)
             {
-                nodes[i] = Mathf.Max(0f, nodes[i]);
+                nodes[i] = Mathf.Max(0f, nodes[i]) + Mathf.Min(0f, nodes[i] * 1.6732f) * (nodes[i] >= 0f ? 1f : 1.0507f);
             }
-
-            // sigmoide
-            // for (int i = 0; i < n_nodes; i++)
-            // {
-            //     nodes[i] = 1f / (1f + Mathf.Exp(-nodes[i]));
-            // }
         }
         public void Mutate(float mutationAmount, float MutationChance) //mutation chance è per non far mutare tutti i layer
         {
+            //Muta il Neural Network
+
             for (int i = 0; i < n_nodes; i++)
             {
                 for (int j = 0; j < n_inputs; j++)
                 {
-                    if(Random.value < MutationChance)
-                        weights[i, j] += Random.Range(-1.0f, 1.0f) * mutationAmount;
+                    if (Random.value < MutationChance)
+                        weights[i, j] += Random.Range(-mutationAmount, mutationAmount);
                 }
-                if(Random.value < MutationChance) 
-                    biases[i] += Random.Range(-1.0f, 1.0f) * mutationAmount;
+                if (Random.value < MutationChance)
+                    biases[i] += Random.Range(-mutationAmount, mutationAmount);
             }
+
+            //for (int i = 0; i < n_nodes; i++)
+            //{
+            //    for (int j = 0; j < n_inputs; j++)
+            //    {
+            //        if (Random.value < MutationChance)
+            //            weights[i, j] += Random.Range(-1.0f, 1.0f) * mutationAmount;
+            //    }
+            //    if (Random.value < MutationChance)
+            //        biases[i] += Random.Range(-1.0f, 1.0f) * mutationAmount;
+            //}
         }
     }
     public void Awake() //viene avviata in automatico quando l'object con questo script viene creato
