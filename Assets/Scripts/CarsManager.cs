@@ -9,8 +9,8 @@ using NUnit.Framework.Internal;
 public class CarsManager : MonoBehaviour
 {
     [SerializeField] Camera gameCamera;
-    [SerializeField] TextMeshPro bestScoreText;
-    [SerializeField] TextMeshPro bestCarText;
+    [SerializeField] GameObject bestScoreText;
+    [SerializeField] GameObject bestCarText;
     [SerializeField] GameObject carPrefab;
     [SerializeField] Vector3 startPosition;
     [SerializeField] int n_cars;
@@ -18,7 +18,7 @@ public class CarsManager : MonoBehaviour
     NeuralNetwork baseNN;
     List<GameObject> carsObjects = new List<GameObject>();
     List<Car> cars = new List<Car>();
-    int BestScore, runningCars, checkpoints;
+    int BestScore = 0, runningCars, checkpoints;
     Car bestCar;
     Car bestRunningCar;
     
@@ -64,12 +64,14 @@ public class CarsManager : MonoBehaviour
             MutationChance = Mathf.Clamp(checkpoints - BestScore, 0.01f, 0.5f);
 
             baseNN = new NeuralNetwork(shape, bestCar.NN.CopyLayers());
-            bestScoreText.text = "Best Score:" + BestScore;
-            bestCarText.text = "Best Car:" + bestCar.id;
+            bestScoreText.GetComponent<TextMeshPro>().text = "Best Score:" + BestScore;
+            bestCarText.GetComponent<TextMeshPro>().text = "Best Car:" + bestCar.id;
             NewGeneration();
         }
         //UpdateCamera();
     }
+
+    public event EventHandler CameraUpdateHandler;
 
     void OnCheckpointReached(object sender, EventArgs e)
     {
@@ -77,7 +79,7 @@ public class CarsManager : MonoBehaviour
         if (car.MaxScore > bestRunningCar.MaxScore)
         {
             bestRunningCar = car;
-            GetComponent<Camera>().GetComponent<CameraController>().target = bestRunningCar.gameObject;
+            CameraUpdateHandler?.Invoke(bestRunningCar.gameObject, EventArgs.Empty);
         }
     }
 
@@ -96,6 +98,7 @@ public class CarsManager : MonoBehaviour
             cars[i].NN = NN;
 
             cars[i].CarStopped += OnCarStop;
+            cars[i].CheckpointReached += OnCheckpointReached;
         }
     }
 }

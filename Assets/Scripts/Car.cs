@@ -2,7 +2,7 @@ using System;
 using System.Runtime.ConstrainedExecution;
 using UnityEngine;
 using VehicleBehaviour;
-using System.Timers;
+using Unity.VisualScripting;
 
 
 public class Car : MonoBehaviour
@@ -10,7 +10,6 @@ public class Car : MonoBehaviour
     [SerializeField] LayerMask bordersLayer;
 
     public NeuralNetwork NN;
-    public Timer timer;
     [SerializeField] int time = 10;
     public bool Eliminated = false;
     public int Score = 0;
@@ -31,22 +30,34 @@ public class Car : MonoBehaviour
 
     public void StartTimer()
     {
-        timer?.Dispose();
-        if(timer != null) timer.Elapsed -= OnTimedEvent;
-        timer = new Timer(time);
-        timer.Elapsed += OnTimedEvent;
-        timer.Start();
+        time = 250;
+        //timer?.Dispose();
+        //if(timer != null) timer.Elapsed -= OnTimedEvent;
+        //timer = new Timer(time);
+        //timer.Elapsed += OnTimedEvent;
+        //timer.Start();
     }
 
-    private void OnTimedEvent(object sender, ElapsedEventArgs e)
-    {
-        Stop();
-    }
+    //private void OnTimedEvent(object sender, ElapsedEventArgs e)
+    //{
+    //    Debug.Log(gameObject.name + " ha finito il tempo.");
+    //    Stop();
+    //}
 
     public void Update()
     {
         outputs = NN.Brain(CreateRaycasts(7, 150f / 7f));
         MoveCar(outputs[0], outputs[1]);
+    }
+
+    private void FixedUpdate()
+    {
+        if (time <= 0 && GetComponent<WheelVehicle>().IsPlayer == true)
+        {
+            Debug.Log(gameObject.name + " ha finito il tempo.");
+            Fail();
+        }
+        time--;
     }
 
     private void MoveCar(float speed, float turn)
@@ -144,7 +155,6 @@ public class Car : MonoBehaviour
             if (Physics.Raycast(origin, direction, out hit, viewdistance, ~(bordersLayer), QueryTriggerInteraction.Ignore))
             {
                 Debug.DrawLine(origin, hit.point, Color.red);
-                Debug.Log("hit plane");
                 distances[i] = hit.distance;
             }
             else
@@ -161,10 +171,12 @@ public class Car : MonoBehaviour
     {
         //Vector3 carPosition = gameObject.transform.position;
         Stop();
+        GetComponent<OnCarCollision>().StopCar();
     }
 
     public void Stop()
     {
+        Debug.Log(gameObject.name + " è stato eliminato");
         MaxScore = Score;
         Eliminated = true;
         Score = 0;
@@ -174,7 +186,9 @@ public class Car : MonoBehaviour
     public void ReachedCheckpoint(int checkpoint)
     {
         Score = checkpoint;
+        MaxScore = Score;
         CheckpointReached?.Invoke(gameObject, EventArgs.Empty);
+        StartTimer();
     }
 }
 

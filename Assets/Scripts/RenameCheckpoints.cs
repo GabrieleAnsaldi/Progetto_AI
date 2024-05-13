@@ -13,7 +13,7 @@ public class RenameCheckpoints : ScriptableObject
         for (int i = 0; i < selectedObjects.Length; i++)
         {
             // Renaming the GameObjects to be "Checkpoint" followed by the index
-            selectedObjects[i].name = i.ToString();
+            selectedObjects[i].name = (i + 1).ToString();
         }
     }
 }
