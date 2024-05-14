@@ -20005,7 +20005,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.2155344, z: -0, w: 0.9764962}
   m_LocalPosition: {x: 47.27, y: 0.35, z: 9.82}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5315192788187309463}
@@ -20364,7 +20364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bordersLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 512
   time: 500
   Eliminated: 0
   Score: 0
