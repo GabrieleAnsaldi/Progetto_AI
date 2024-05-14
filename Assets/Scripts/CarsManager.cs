@@ -14,11 +14,13 @@ public class CarsManager : MonoBehaviour
     [SerializeField] Camera gameCamera;
     [SerializeField] GameObject BestFitnessText;
     [SerializeField] GameObject bestCarText;
+    [SerializeField] GameObject generationsText;
     [SerializeField] GameObject carPrefab;
     [SerializeField] Vector3 startPosition;
     [SerializeField] int n_cars;
     [SerializeField] GameObject BordLeft;
     [SerializeField] GameObject BordRight;
+    int generations = 0;
     public int[] shape;
     NeuralNetwork baseNN;
     List<GameObject> carsObjects = new List<GameObject>();
@@ -27,6 +29,7 @@ public class CarsManager : MonoBehaviour
     int runningCars, checkpoints;
     Car bestCar;
     Car bestRunningCar;
+    public bool LapFinished = false;
     
     float MutationAmount = .5f, MutationChance = .5f;
 
@@ -50,9 +53,9 @@ public class CarsManager : MonoBehaviour
     void Update()
     {
         //Destroy all untagged objects
-        /*foreach (GameObject obj in GameObject.FindObjectsOfType<GameObject>())
+        foreach (GameObject obj in GameObject.FindObjectsOfType<GameObject>())
             if (obj.name == "Trail")
-                Destroy(obj);*/
+                Destroy(obj);
         for (int i = 0; i < BordRight.transform.GetChild(0).childCount; i++)
         {
             BordRight.transform.GetChild(0).GetChild(i).gameObject.layer = BordRight.layer;
@@ -75,12 +78,13 @@ public class CarsManager : MonoBehaviour
             BestFitness = car.fitness;
             BestRoundFitness = BestFitness;
             bestCar = car;
+            if(car.LapFinished) LapFinished = true;
         }
         if (runningCars == 0)
         {
             // new generation with the nn of the best car
             
-            MutationAmount = Mathf.Clamp(Mathf.Log(Mathf.Abs(BestFitness-checkpoints)), 0, 0.6f);
+            MutationAmount = Mathf.Clamp(Mathf.Log(Mathf.Abs(BestFitness - checkpoints)), 0, 0.6f);
             MutationChance = Mathf.Clamp(Mathf.Log(Mathf.Abs(BestFitness - previousFitness)), 0, 0.6f);
 
             baseNN = new NeuralNetwork(shape, bestCar.NN.CopyLayers());
@@ -105,6 +109,8 @@ public class CarsManager : MonoBehaviour
 
     void NewGeneration()
     {
+        generations++;
+        generationsText.GetComponent<TextMeshProUGUI>().text = "Generation: " + generations;
         foreach (Car car in cars) Destroy(car.gameObject);
         carsObjects = new List<GameObject>();
         cars = new List<Car>();

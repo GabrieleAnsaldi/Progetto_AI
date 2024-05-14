@@ -20365,13 +20365,17 @@ MonoBehaviour:
   bordersLayer:
     serializedVersion: 2
     m_Bits: 512
-  time: 500
+  time: 100
   Eliminated: 0
-  Score: 0
   LapFinished: 0
-  MaxScore: 0
+  MaxCheckpoints: 0
   viewdistance: 5
   id: 0
+  Checkpoints: 0
+  Distance: 0
+  DistanceFromLastCheckpoint: 0
+  LastCheckpointPosition: {x: 0, y: 0, z: 0}
+  fitness: 0
 --- !u!114 &1240678586787303095
 MonoBehaviour:
   m_ObjectHideFlags: 0
