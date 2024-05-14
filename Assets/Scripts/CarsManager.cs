@@ -7,6 +7,7 @@ using TMPro;
 using NUnit.Framework.Internal;
 using Unity.VisualScripting;
 using UnityEditor.Search;
+using System.Linq;
 
 public class CarsManager : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class CarsManager : MonoBehaviour
     [SerializeField] GameObject carPrefab;
     [SerializeField] Vector3 startPosition;
     [SerializeField] int n_cars;
+    [SerializeField] GameObject BordLeft;
+    [SerializeField] GameObject BordRight;
     public int[] shape = new int[] { 7, 10, 10, 2 };
     NeuralNetwork baseNN;
     List<GameObject> carsObjects = new List<GameObject>();
@@ -51,6 +54,14 @@ public class CarsManager : MonoBehaviour
         /*foreach (GameObject obj in GameObject.FindObjectsOfType<GameObject>())
             if (obj.name == "Trail")
                 Destroy(obj);*/
+        for (int i = 0; i < BordRight.transform.GetChild(0).childCount; i++)
+        {
+            BordRight.transform.GetChild(0).GetChild(i).gameObject.layer = BordRight.layer;
+        }
+        for (int i = 0; i < BordLeft.transform.GetChild(0).childCount; i++)
+        {
+            BordLeft.transform.GetChild(0).GetChild(i).gameObject.layer = BordLeft.layer;
+        }
     }
 
     void OnCarStop(object sender, EventArgs e)

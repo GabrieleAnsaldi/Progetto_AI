@@ -54,7 +54,7 @@ public class Car : MonoBehaviour
     private void FixedUpdate()
     {
         time--;
-        if (time <= 0 && Eliminated)
+        if (time <= 0 && !Eliminated)
         {
             Debug.Log("Auto " + gameObject.GetComponent<Car>().id + " ha finito il tempo.");
             Fail();
@@ -152,9 +152,9 @@ public class Car : MonoBehaviour
             Vector3 direction = rotation * transform.forward;
 
             Vector3 origin = gameObject.transform.position + transform.up * 0.01f;
-            //Debug.DrawLine(origin, origin + direction * viewdistance, Color.green);
+            Debug.DrawLine(origin, origin + direction * viewdistance, Color.green);
             // Use the layer mask in the raycast
-            if (Physics.Raycast(origin, direction, out hit, viewdistance, (bordersLayer), QueryTriggerInteraction.Ignore))
+            if (Physics.Raycast(origin, direction, out hit, viewdistance, (bordersLayer)))
             {
                 Debug.DrawLine(origin, hit.point, Color.red);
                 distances[i] = hit.distance;

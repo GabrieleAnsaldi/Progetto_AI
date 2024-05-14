@@ -14,7 +14,6 @@ public class OnCarCollision : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         //Debug.Log("OnCollisionEnter");
-        gameObject.GetComponent<WheelVehicle>().IsPlayer = true;
         if (collision.gameObject.tag == "railing")
         {
             Debug.Log("Auto colpisce barriera");

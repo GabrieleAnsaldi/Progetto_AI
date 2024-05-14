@@ -20364,7 +20364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bordersLayer:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 128
   time: 500
   Eliminated: 0
   Score: 0
