@@ -83,7 +83,7 @@ public class Car : MonoBehaviour
         {
             checkpointWeight = 110f; // Assign a high weight if checkpoints are important
             distanceWeight = -.1f;    // Distance might be a base score with a weight of 1
-            timeWeight = -.1f;        // If staying alive longer is important, assign a higher weight
+            timeWeight = -.15f;        // If staying alive longer is important, assign a higher weight
             distanceFromLastCheckpointWeight = -.1f; // Assign a high weight if distance from last checkpoint is important
         }
         else

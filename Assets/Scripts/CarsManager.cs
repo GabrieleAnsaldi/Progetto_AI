@@ -70,7 +70,7 @@ public class CarsManager : MonoBehaviour
 
     void OnCarStop(object sender, EventArgs e)
     {
-        //check if the car was the last one running
+        
         Car car = (sender as GameObject).GetComponent<Car>();
         runningCars--;
         if(car.fitness > BestFitness)
@@ -78,9 +78,18 @@ public class CarsManager : MonoBehaviour
             BestFitness = car.fitness;
             BestRoundFitness = BestFitness;
             bestCar = car;
-            if(car.LapFinished) LapFinished = true;
+            if (car.LapFinished)
+            {
+                LapFinished = true;
+                ////////////////////////////////////// resetto i best fitness una volta terminato il giro completo in modo da poter allenare la velocità
+                BestRoundFitness = 0;
+                BestFitness = 0;
+
+
+                BestFitnessText.GetComponent<TextMeshProUGUI>().text = "Best Score:" + BestFitness;
+            }
         }
-        if (runningCars == 0)
+        if (runningCars == 0)//check if the car was the last one running
         {
             // new generation with the nn of the best car
             
