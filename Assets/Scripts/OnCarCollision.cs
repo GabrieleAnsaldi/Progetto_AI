@@ -40,7 +40,7 @@ public class OnCarCollision : MonoBehaviour
             {
                 car.ReachedCheckpoint(checkpoint);
             }
-            else if (checkpoint == 0 && car.Checkpoints == checkpointsParent.transform.childCount) //finito il giro
+            else if (/*checkpoint == 0 && car.Checkpoints == checkpointsParent.transform.childCount*/  car.Checkpoints == 344) //finito il giro
             {
                 car.LapFinished = true;
 

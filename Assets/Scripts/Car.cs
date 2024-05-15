@@ -75,14 +75,31 @@ public class Car : MonoBehaviour
 
     public float CalculateFitness()
     {
-        // Define weights for each parameter
-        float checkpointWeight = 10.0f; // Assign a high weight if checkpoints are important
-        float distanceWeight = 1.0f;    // Distance might be a base score with a weight of 1
-        float timeWeight = .01f;        // If staying alive longer is important, assign a higher weight
-        float distanceFromLastCheckpointWeight = 1.0f; // Assign a high weight if distance from last checkpoint is important
+        float checkpointWeight; 
+        float distanceWeight;    
+        float timeWeight;        
+        float distanceFromLastCheckpointWeight;
+        if (Manager.GetComponent<CarsManager>().LapFinished) //una volta finito il giro contano di più i checkpoint e meno il tempo sopravvissuto
+        {
+            checkpointWeight = 110f; // Assign a high weight if checkpoints are important
+            distanceWeight = -.1f;    // Distance might be a base score with a weight of 1
+            timeWeight = -.15f;        // If staying alive longer is important, assign a higher weight
+            distanceFromLastCheckpointWeight = -.1f; // Assign a high weight if distance from last checkpoint is important
+        }
+        else
+        {
+            checkpointWeight = 10.0f; // Assign a high weight if checkpoints are important
+            distanceWeight = 1.0f;    // Distance might be a base score with a weight of 1
+            timeWeight = .01f;        // If staying alive longer is important, assign a higher weight
+            distanceFromLastCheckpointWeight = 1.0f; // Assign a high weight if distance from last checkpoint is important
+        }/*
+        checkpointWeight = 110f; // Assign a high weight if checkpoints are important
+        distanceWeight = -.1f;    // Distance might be a base score with a weight of 1
+        timeWeight = -.1f;        // If staying alive longer is important, assign a higher weight
+        distanceFromLastCheckpointWeight = -.1f; // Assign a high weight if distance from last checkpoint is important*/
 
         // Calculate distance from last checkpoint
-        
+
 
         // Calculate weighted scores
         float checkpointScore = Checkpoints * checkpointWeight;
